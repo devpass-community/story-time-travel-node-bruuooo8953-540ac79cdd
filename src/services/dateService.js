@@ -1,7 +1,10 @@
 const getCurrentDate = () => {
-    const date = new Date()
-    const formattedDate = (date.getFullYear() + "-" + ((date.getMonth() + 1)) + "-" + (date.getDate() ))
-    return formattedDate.split()
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    const formattedDate = `${year}-${month}-${day}`;
+    return formattedDate;
 };
 
 module.exports = {
