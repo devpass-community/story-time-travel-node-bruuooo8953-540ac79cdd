@@ -1,6 +1,7 @@
 const getCurrentDate = () => {
     const date = new Date()
-    return formattedDate = (date.getFullYear() + "-" + ((date.getMonth() + 1)) + "-" + (date.getDate() ))
+    const formattedDate = (date.getFullYear() + "-" + ((date.getMonth() + 1)) + "-" + (date.getDate() ))
+    return formattedDate.split()
 };
 
 module.exports = {
