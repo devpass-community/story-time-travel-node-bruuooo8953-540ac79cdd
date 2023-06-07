@@ -1,6 +1,6 @@
 const getCurrentDate = () => {
     const date = new Date()
-    return date.toLocaleDateString()
+    return formattedDate = (date.getFullYear() + "-" + ((date.getMonth() + 1)) + "-" + (date.getDate() ))
 };
 
 module.exports = {
